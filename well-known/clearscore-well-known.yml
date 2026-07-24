@@ -1,0 +1,52 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of /.well-known/ across ClearScore hosts
+note: >-
+  No real /.well-known/ discovery documents were found. The consumer site
+  (www.clearscore.com) returns 404 for every probed path. The developer-docs
+  host (docs.clearscore.com, a password-gated ReadMe.io project "cs-connect" =
+  ClearScore Connect) returns soft-200 SPA shells for security.txt and
+  ai-plugin.json — these are the ReadMe password-protection page, NOT real
+  documents, so they are recorded here but not treated as hits and no WellKnown
+  pointer is wired.
+hosts:
+- host: https://www.clearscore.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://docs.clearscore.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    real: false
+    reason: soft-200 ReadMe.io password-protection shell, not a security.txt
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    real: false
+    reason: soft-200 ReadMe.io password-protection shell, not an ai-plugin.json
+- host: https://api.clearscore.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
