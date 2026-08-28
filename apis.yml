@@ -11,6 +11,17 @@ description: >-
   QED Investors. This profile was surfaced as a QED portfolio company and enriched by the API
   Evangelist pipeline; ClearScore's developer API is documented behind a password-gated
   ReadMe.io portal, so no public OpenAPI or machine-readable spec could be captured.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
