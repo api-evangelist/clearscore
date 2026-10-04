@@ -44,12 +44,15 @@ x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-18'
+x-docs-platform: readme
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-09-24
 tags:
 - Company
 - Credit
 - Credit Score
 - Fintech
-- Financial-Services
+- Financial Services
 - Consumer Credit
 - Open Banking
 - Identity Protection
@@ -62,6 +65,7 @@ tags_raw:
 - Consumer Credit
 - Open Banking
 - Identity Protection
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
